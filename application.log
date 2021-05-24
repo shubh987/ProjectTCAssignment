@@ -1,0 +1,145 @@
+2021-05-24 09:17:57- INFO	 Application shutdown requested.
+2021-05-24 09:19:35- INFO	 Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-24 09:19:35- INFO	 HikariPool-1 - Shutdown initiated...
+2021-05-24 09:19:36- INFO	 HikariPool-1 - Shutdown completed.
+2021-05-24 09:52:05- INFO	 Starting SpringJdbcApplication using Java 14.0.2 on shubhamdes with PID 160936 (D:\1\SpringJdbc\target\classes started by shubhamdes in D:\1\SpringJdbc)
+2021-05-24 09:52:05- INFO	 No active profile set, falling back to default profiles: default
+2021-05-24 09:52:05- INFO	 The Class-Path manifest attribute in C:\Users\shubhamdes\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/shubhamdes/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-05-24 09:52:05- INFO	 Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-24 09:52:05- INFO	 For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-24 09:52:08- INFO	 Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-05-24 09:52:08- INFO	 Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2021-05-24 09:52:09- INFO	 Tomcat initialized with port(s): 8080 (http)
+2021-05-24 09:52:09- INFO	 Starting service [Tomcat]
+2021-05-24 09:52:09- INFO	 Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 09:52:09- INFO	 Initializing Spring embedded WebApplicationContext
+2021-05-24 09:52:09- INFO	 Root WebApplicationContext: initialization completed in 4155 ms
+2021-05-24 09:52:11- INFO	 Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 09:52:11- INFO	 LiveReload server is running on port 35729
+2021-05-24 09:52:11- INFO	 HikariPool-1 - Starting...
+2021-05-24 09:52:14- INFO	 HikariPool-1 - Start completed.
+2021-05-24 09:52:14- INFO	 Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 09:52:15- INFO	 Started SpringJdbcApplication in 11.054 seconds (JVM running for 30.809)
+2021-05-24 09:52:31- INFO	 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 09:52:31- INFO	 Initializing Servlet 'dispatcherServlet'
+2021-05-24 09:52:31- INFO	 Completed initialization in 2 ms
+2021-05-24 09:53:26- INFO	 Employee list found 
+2021-05-24 10:28:50- INFO	 Application shutdown requested.
+2021-05-24 10:28:50- INFO	 Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-24 10:28:50- INFO	 HikariPool-1 - Shutdown initiated...
+2021-05-24 10:28:50- INFO	 HikariPool-1 - Shutdown completed.
+2021-05-24 12:51:39- INFO	 Starting EmployeeServiceTest using Java 14.0.2 on shubhamdes with PID 166112 (started by shubhamdes in D:\1\SpringJdbc)
+2021-05-24 12:51:39- INFO	 No active profile set, falling back to default profiles: default
+2021-05-24 12:51:44- INFO	 Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-05-24 12:51:44- INFO	 Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2021-05-24 12:51:56- INFO	 Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 12:52:00- INFO	 HikariPool-1 - Starting...
+2021-05-24 12:52:05- INFO	 HikariPool-1 - Start completed.
+2021-05-24 12:52:08- INFO	 Started EmployeeServiceTest in 29.907 seconds (JVM running for 36.315)
+2021-05-24 12:52:08- INFO	 Employee list found 
+2021-05-24 12:52:08- INFO	 Employee added sucessfully
+2021-05-24 12:52:09- INFO	 Employee list found 
+2021-05-24 12:52:09- INFO	 List with expected salary range sent
+2021-05-24 12:52:09- INFO	 Employee found sucessfully
+2021-05-24 12:52:09- INFO	 Employee list found 
+2021-05-24 12:52:09- INFO	 List with expected department sent
+2021-05-24 12:52:09- INFO	 Employee list found 
+2021-05-24 12:52:09- INFO	 HikariPool-1 - Shutdown initiated...
+2021-05-24 12:52:10- INFO	 HikariPool-1 - Shutdown completed.
+2021-05-24 12:52:10- INFO	 Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-24 13:08:04- INFO	 Starting SpringJdbcApplication using Java 14.0.2 on shubhamdes with PID 167060 (D:\1\SpringJdbc\target\classes started by shubhamdes in D:\1\SpringJdbc)
+2021-05-24 13:08:04- INFO	 No active profile set, falling back to default profiles: default
+2021-05-24 13:08:04- INFO	 The Class-Path manifest attribute in C:\Users\shubhamdes\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/shubhamdes/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-05-24 13:08:04- INFO	 Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-24 13:08:04- INFO	 For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-24 13:08:06- INFO	 Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-05-24 13:08:06- INFO	 Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2021-05-24 13:08:09- INFO	 Tomcat initialized with port(s): 8080 (http)
+2021-05-24 13:08:09- INFO	 Starting service [Tomcat]
+2021-05-24 13:08:09- INFO	 Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 13:08:10- INFO	 Initializing Spring embedded WebApplicationContext
+2021-05-24 13:08:10- INFO	 Root WebApplicationContext: initialization completed in 5213 ms
+2021-05-24 13:08:11- INFO	 Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 13:08:11- INFO	 LiveReload server is running on port 35729
+2021-05-24 13:08:11- INFO	 HikariPool-1 - Starting...
+2021-05-24 13:08:12- INFO	 HikariPool-1 - Start completed.
+2021-05-24 13:08:12- INFO	 Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 13:08:13- INFO	 Started SpringJdbcApplication in 9.201 seconds (JVM running for 11.281)
+2021-05-24 13:09:13- INFO	 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 13:09:13- INFO	 Initializing Servlet 'dispatcherServlet'
+2021-05-24 13:09:13- INFO	 Completed initialization in 1 ms
+2021-05-24 13:36:55- INFO	 Employee list found 
+2021-05-24 13:38:33- INFO	 Employee added sucessfully
+2021-05-24 13:38:58- INFO	 Employee found sucessfully
+2021-05-24 13:39:30- WARN	 Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'employeeId' for method parameter type int is not present]
+2021-05-24 13:40:30- WARN	 Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'employeeId' for method parameter type int is not present]
+2021-05-24 13:40:58- INFO	 Employee found sucessfully
+2021-05-24 13:43:44- INFO	 Employee list found 
+2021-05-24 13:43:44-ERROR	 Could not find employees with given department
+2021-05-24 13:43:44- WARN	 Resolved [com.example.exception.NoEmployeeFound: Could not find employees with given department]
+2021-05-24 13:43:57- INFO	 Employee list found 
+2021-05-24 13:43:57- INFO	 List with expected department sent
+2021-05-24 13:44:49- INFO	 Employee list found 
+2021-05-24 13:44:49- INFO	 List with expected salary range sent
+2021-05-24 13:45:59- INFO	 Employee list found 
+2021-05-24 13:45:59- INFO	 List with expected salary range sent
+2021-05-24 13:47:14- INFO	 Employee list found 
+2021-05-24 13:47:23- INFO	 Employee list found 
+2021-05-24 13:47:23- WARN	 Resolved [com.example.exception.NoEmployeeFound: No employee found for given requirements]
+2021-05-24 13:48:24- INFO	 Employee updated sucessfully 
+2021-05-24 13:55:34- WARN	 Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'employeeId' for method parameter type int is not present]
+2021-05-24 13:58:36- INFO	 Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-24 13:58:36- INFO	 HikariPool-1 - Shutdown initiated...
+2021-05-24 13:58:36- INFO	 HikariPool-1 - Shutdown completed.
+2021-05-24 13:58:36- INFO	 Starting SpringJdbcApplication using Java 14.0.2 on shubhamdes with PID 167060 (D:\1\SpringJdbc\target\classes started by shubhamdes in D:\1\SpringJdbc)
+2021-05-24 13:58:36- INFO	 No active profile set, falling back to default profiles: default
+2021-05-24 13:58:37- INFO	 Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-05-24 13:58:38- INFO	 Finished Spring Data repository scanning in 244 ms. Found 0 JDBC repository interfaces.
+2021-05-24 13:58:38- INFO	 Tomcat initialized with port(s): 8080 (http)
+2021-05-24 13:58:38- INFO	 Starting service [Tomcat]
+2021-05-24 13:58:38- INFO	 Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 13:58:38- INFO	 Initializing Spring embedded WebApplicationContext
+2021-05-24 13:58:38- INFO	 Root WebApplicationContext: initialization completed in 1506 ms
+2021-05-24 13:58:38- INFO	 Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 13:58:38- INFO	 LiveReload server is running on port 35729
+2021-05-24 13:58:38- INFO	 HikariPool-2 - Starting...
+2021-05-24 13:58:39- INFO	 HikariPool-2 - Start completed.
+2021-05-24 13:58:39- INFO	 Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 13:58:40- INFO	 Started SpringJdbcApplication in 3.458 seconds (JVM running for 3038.204)
+2021-05-24 13:58:40- INFO	 Condition evaluation unchanged
+2021-05-24 14:00:31- INFO	 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 14:00:31- INFO	 Initializing Servlet 'dispatcherServlet'
+2021-05-24 14:00:31- INFO	 Completed initialization in 1 ms
+2021-05-24 14:00:31- WARN	 Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{employyeId}"]
+2021-05-24 14:48:35- INFO	 Application shutdown requested.
+2021-05-24 14:48:35- INFO	 Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-24 14:48:35- INFO	 HikariPool-2 - Shutdown initiated...
+2021-05-24 14:48:35- INFO	 HikariPool-2 - Shutdown completed.
+2021-05-24 15:48:45- INFO	 Starting SpringJdbcApplication using Java 14.0.2 on shubhamdes with PID 168596 (D:\1\SpringJdbc\target\classes started by shubhamdes in D:\1\SpringJdbc)
+2021-05-24 15:48:45- INFO	 No active profile set, falling back to default profiles: default
+2021-05-24 15:48:46- INFO	 The Class-Path manifest attribute in C:\Users\shubhamdes\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/shubhamdes/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-05-24 15:48:46- INFO	 Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-24 15:48:46- INFO	 For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-24 15:48:48- INFO	 Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-05-24 15:48:48- INFO	 Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2021-05-24 15:48:49- INFO	 Tomcat initialized with port(s): 8080 (http)
+2021-05-24 15:48:49- INFO	 Starting service [Tomcat]
+2021-05-24 15:48:49- INFO	 Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-24 15:48:49- INFO	 Initializing Spring embedded WebApplicationContext
+2021-05-24 15:48:49- INFO	 Root WebApplicationContext: initialization completed in 3532 ms
+2021-05-24 15:48:51- INFO	 Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-24 15:48:51- INFO	 LiveReload server is running on port 35729
+2021-05-24 15:48:51- INFO	 HikariPool-1 - Starting...
+2021-05-24 15:48:54- INFO	 HikariPool-1 - Start completed.
+2021-05-24 15:48:54- INFO	 Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-24 15:48:55- INFO	 Started SpringJdbcApplication in 11.093 seconds (JVM running for 14.598)
+2021-05-24 15:50:09- INFO	 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-24 15:50:09- INFO	 Initializing Servlet 'dispatcherServlet'
+2021-05-24 15:50:09- INFO	 Completed initialization in 4 ms
+2021-05-24 15:50:24- INFO	 Employee deleted sucessfully 
+2021-05-24 15:50:49-ERROR	 No employee found with input Employee Id
+2021-05-24 15:50:49- WARN	 Resolved [com.example.exception.NoEmployeeFound: No employee found with input Employee Id]
+2021-05-24 15:51:18- INFO	 Application shutdown requested.
+2021-05-24 15:51:18- INFO	 Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-24 15:51:18- INFO	 HikariPool-1 - Shutdown initiated...
+2021-05-24 15:51:18- INFO	 HikariPool-1 - Shutdown completed.
