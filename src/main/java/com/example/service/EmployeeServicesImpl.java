@@ -1,8 +1,14 @@
 package com.example.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
 import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,6 +21,11 @@ import com.example.exception.EmptyInputFieldException;
 import com.example.exception.NoEmployeeFound;
 import com.example.repository.IEmployeeRepository;
 
+/**
+ * 
+ * @author shubhamdes
+ *
+ */
 @Service
 public class EmployeeServicesImpl implements IEmployeeServices {
 
@@ -23,6 +34,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 
 	public static final Logger logger = LogManager.getLogger(EmployeeServicesImpl.class.getName());
 
+	// adding employee
 	@Override
 	public boolean addEmployee(Employee employee)
 			throws EmployeeAlreadyExist, EmptyInputFieldException, EmptyResultDataAccessException, NoEmployeeFound {
@@ -51,6 +63,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// getting employeee by Id
 	@Override
 	public Employee getEmployeeById(int employeeId) throws NoEmployeeFound {
 		Employee employee = employeeRepository.getEmployeeById(employeeId);
@@ -63,6 +76,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// getting all employees
 	@Override
 	public List<Employee> getAllEmployee() throws NoEmployeeFound {
 		List<Employee> employeeList = employeeRepository.getAllEmployee();
@@ -75,6 +89,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// deleting employee by Id
 	@Override
 	public boolean deleteEmployee(int employeeId) throws NoEmployeeFound {
 		if (employeeRepository.getEmployeeById(employeeId) != null) {
@@ -90,6 +105,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// update employee
 	@Override
 	public boolean updateEmployee(int employeeId, Employee employee) throws NoEmployeeFound {
 		if (employeeRepository.getEmployeeById(employeeId) != null) {
@@ -105,6 +121,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// employee by salary range
 	@Override
 	public List<Employee> getEmployeeBySalaryRange(int minValue, int maxValue) throws NoEmployeeFound {
 		List<Employee> employeeList;
@@ -119,6 +136,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// employees by department
 	@Override
 	public List<Employee> getEmployeeByDepartment(String departmentName) throws NoEmployeeFound {
 		List<Employee> employeeList;
@@ -133,6 +151,7 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 		}
 	}
 
+	// employees by salary range and department
 	@Override
 	public List<Employee> getEmployeeWithDeptNSalRange(String department, int minValue, int maxValue)
 			throws NoEmployeeFound {
@@ -150,6 +169,78 @@ public class EmployeeServicesImpl implements IEmployeeServices {
 			throw new NoEmployeeFound("No employee found for given requirements");
 		} else
 			return empList;
+	}
+
+	// employees by salary range and department in hashmap
+	@Override
+	public Map<Integer, Employee> getEmployeeWithDeptNSalRangeToMap(String department, int minValue, int maxValue)
+			throws NoEmployeeFound {
+		Integer i = 1;
+		HashMap<Integer, Employee> empMap = new HashMap<>();
+		Employee employee;
+		ListIterator<Employee> listIterator = getAllEmployee().listIterator();
+		while (listIterator.hasNext()) {
+			employee = listIterator.next();
+			if (employee.getDepartment().equals(department) && employee.getSalary() > minValue
+					&& employee.getSalary() < maxValue) {
+				empMap.put(i, employee);
+				i++;
+			}
+		}
+		if (empMap.isEmpty()) {
+			throw new NoEmployeeFound("No employee found for given requirements");
+		} else
+			return empMap;
+	}
+
+	// employees in hashtable
+	@Override
+	public Hashtable<Integer, Employee> getEmployeeToHashTable(String department) throws NoEmployeeFound {
+		Integer k = 1;
+		Hashtable<Integer, Employee> employeeTable = new Hashtable<>();
+		List<Employee> employeeList = employeeRepository.getAllEmployee().stream()
+				.filter(i -> i.getDepartment().equals(department)).collect(Collectors.toList());
+		for (Employee emp : employeeList) {
+			employeeTable.put(k++, emp);
+		}
+		if (employeeTable.isEmpty()) {
+			throw new NoEmployeeFound("Map is empty");
+		} else {
+			return employeeTable;
+		}
+	}
+
+	// sorting by salary and name
+	@Override
+	public List<Employee> sortingEmployees(String value) {
+		List<Employee> empList = employeeRepository.getAllEmployee();
+		Comparator<Employee> comparator;
+
+		switch (value) {
+		case "salAsc":
+			comparator = (emp1, emp2) -> emp1.getSalary() < emp2.getSalary() ? -1
+					: emp1.getSalary() > emp2.getSalary() ? 1 : 0;
+			Collections.sort(empList, comparator);
+			break;
+		case "salDesc":
+			comparator = (emp1, emp2) -> emp1.getSalary() < emp2.getSalary() ? 1
+					: emp1.getSalary() > emp2.getSalary() ? -1 : 0;
+			Collections.sort(empList, comparator);
+			break;
+		case "nameAsc":
+			comparator = (emp1, emp2) -> emp1.getName().compareTo(emp2.getName()) < 0 ? -1
+					: emp1.getName().compareTo(emp2.getName()) > 0 ? 1 : 0;
+			Collections.sort(empList, comparator);
+			break;
+		case "nameDesc":
+			comparator = (emp1, emp2) -> emp1.getName().compareTo(emp2.getName()) < 0 ? 1
+					: emp1.getName().compareTo(emp2.getName()) > 0 ? -1 : 0;
+			Collections.sort(empList, comparator);
+			break;
+		default:
+			break;
+		}
+		return empList;
 	}
 
 }

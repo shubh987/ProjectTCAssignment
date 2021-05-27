@@ -1,6 +1,9 @@
 package com.example.entity;
 
-public class Employee {
+
+public class Employee{
+	//comparable
+//public class Employee implements Comparable<Employee> {
 
 	private int employeeId;
 
@@ -79,6 +82,11 @@ public class Employee {
 				+ salary + ", address=" + address + "]";
 	}
 
-	
-	
+	//comparable method
+//	@Override
+//	public int compareTo(Employee emp) {
+//		return (this.getSalary() < emp.getSalary()) ? -1 : (this.getSalary() > emp.getSalary()) ? +1 : 0;
+//
+//	}
+
 }
